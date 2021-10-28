@@ -1,4 +1,4 @@
-### 学习go专用
+### 学习go专用 （https://gitee.com/LY2016Start/blogtemplet）
  - #### 安装（参考 https://www.jianshu.com/p/1961ad9f65e9 ） 2021-10-25
    1. 由于很多包在github上面，使用国内镜像代理方便
         ```cassandraql
@@ -41,5 +41,12 @@
     ```
     Version of Go is too old for this version of Delve (minimum supported version 1.15, suppress this error with --check-go-version=false)        ```
     ```
-    去官网`https://golang.google.cn/dl/ `找到最新的zip`go1.17.2.windows-amd64.zip`解压,删除原来的go，复制进去，debug成功。
+    去官网`https://golang.google.cn/dl/ `找到最新的zip`go1.17.2.windows-amd64.zip`解压,删除原来的go，复制进去，debug成功，最新版有问题，回到16.9  
+  - #### debug 调试接口中------------   2021-10-29
+    - missing go.sum entry for module providing package ＜package_name＞ 
+    ```cassandraql
+    当在代码中使用了第三方库 ，但是go.mod中并没有跟着更新的时候
+    如果直接run或者build就会报这个错误
+    解决： go mod tidy 
+  - #### 
     
